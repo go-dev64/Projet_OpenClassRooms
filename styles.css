@@ -1,0 +1,370 @@
+html{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+   display: block;
+}
+
+body {
+   background-color: lightblue;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    margin: 0;
+    padding: 0;
+   min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    min-height: 1000px;
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 15px 15px rgb(0 0 0 / 10%);
+}
+
+.container .left_side{
+   position: relative;
+   background: #003147;
+   padding: 30px;
+}
+
+.profil_text{
+   position: relative;
+   display: flex;
+   flex-direction:column ;
+   align-items: center;
+   padding-bottom: 20px;
+   border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+
+.profil_text .img__bx{
+   position: relative;
+   width: 200px;
+   height: 200px;
+   border-radius: 200px;
+   overflow: hidden;
+}
+
+.profil_text .img__bx img{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.profil_text h2{/*nom prenom*/
+   color: #fff;
+   font-size: 30px;
+   margin-top: 20px;
+   text-align: center;
+   font-weight: 600;
+   line-height: 1.4em;
+}
+
+.profil_text h2 span{/*fonction*/
+   font-size: 0.6em;
+    font-weight: 300;
+}
+
+.contactInfo{
+   padding-bottom: 20px;
+   border-bottom: 1px solid rgba(255, 255, 255, .2);
+   text-align: left;
+   font-size: 20px;
+}
+
+.title{
+   color: #fff;
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing: 1px;
+   margin-bottom: 20px;
+   text-align: center;
+   font-size: 25px;
+}
+
+.contactInfo ul  {
+   position: relative;
+   margin-left: 0;
+   padding: 0;
+   
+}
+
+.contactInfo ul li   {
+   position: relative;
+   list-style: none;
+   margin: 10px 0;
+}
+
+.contactInfo ul li .icon{
+   display: inline-block;
+   width: 30px;
+   font-size: 20px;
+   color: #03a9f4;
+}
+
+.contactInfo ul li span{
+      color: #fff;
+      font-weight: lighter;
+}
+
+.formation{
+   padding-bottom: 20px;
+   border-bottom: 1px solid rgba(255, 255, 255, .2);
+   text-align: left;
+   font-size: 20px;
+   width: auto;
+}
+
+.formation ul{
+   position: relative;
+   margin-left: 0;
+   padding: 0;
+}
+
+.formation ul li   {
+   position: relative;
+   list-style: none;
+   margin: 10px 0;
+   color: #fff;
+   font-weight: 300;
+}
+
+.formation h5{
+   color: #03a9f4;
+   font-weight:500 ;
+   margin: 5px;
+}
+
+.formation h4:nth-child(2){
+   color: #fff;
+   font-weight:700 ;
+   margin: 5px;
+}
+
+.formation h4{
+   color: #fff;
+   font-weight:300 ;
+   margin: 5px;
+}
+
+.container .right_side{
+   position: relative;
+   background: #eee;
+   padding: 20px;
+}
+
+.profil{
+   margin-bottom: 20px;
+   padding: 5px;
+}
+
+.profil:last-chil{
+   margin-bottom: 0;
+}
+
+.title2{
+   color: #003147;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   margin-bottom: 20px;
+   margin-left: 30px;
+   margin-top: 50px;
+}
+
+.descriptif{
+   display: block;
+   width: auto;
+   margin-left: 0;
+   padding: 5px 0px 5px 50px;
+}
+
+.descriptif li{
+   margin: 0;
+   text-align: left;
+   padding: 2px;
+   width: 100%;
+   font-size: 1.3em;
+}
+
+
+/*PARTIE ANIMATION DES ONGLET*/
+a{
+text-decoration: none;
+color: inherit;
+}
+
+ul.tabs , .tabs li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    font-size: 1.05em;
+    font-weight: bold;
+
+}
+
+.tabs:after{
+   display: table;
+   content: ' ';
+   clear: both;
+}
+
+.tabs li{
+   float: left;
+   display:flex;
+   text-align: center;
+   border-top: 1px solid #9a99992e;
+   border-left: 1px solid #9a99992e;
+   border-right: 1px solid #9a99992e;
+   border-top-left-radius: 5px ;
+   border-top-right-radius: 5px;
+ }
+
+.tabs a{
+   display: inline-block;
+   background-color: #eee;
+   padding: 10px 25px;
+   width: 100%;
+
+   
+}
+
+.tabs .active a{
+   background-color: #fff;
+   display: block;
+   border-top-left-radius: 5px ;
+   border-top-right-radius: 5px;
+}
+
+.tabs-content{
+  position: relative ;
+   z-index: 3;
+   padding: 20px;
+   background-color: #fff;
+   box-shadow: 2px 2px 2px black ;
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+   margin-bottom: 20px;
+}
+
+.tabs-content span{
+   font-weight: bold;
+}
+
+.tab-content{
+   display: none;
+}
+
+.tab-content.active{
+   display: block;
+   scroll-margin-top: 20em;
+}
+
+
+.title3{
+   color: #003147;
+   letter-spacing: 1px;
+   margin-bottom: 10px;
+   margin-left: 50px;
+   }
+
+.soft{
+   display: flex;
+   flex-wrap: wrap;
+   width: 40em;
+   height: 7em;
+   text-align: center;
+   margin: auto;
+   justify-content: space-evenly;
+   align-content: flex-start;
+   align-items: flex-end;
+}
+
+.Langues{
+   display: flex;
+   flex-wrap: wrap;
+   width: 600px;
+   height: 60px;
+   text-align: center;
+   margin: auto;
+   justify-content: space-evenly;
+   align-content: flex-start;
+   align-items: flex-end;
+}
+.soft div, .Languages div{
+   height: 50px;
+   width: 250px;
+}
+
+.Créo, .Vericut, .Draftsight,.pc, .francais, .anglais{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    font-weight: 600;
+}
+
+.Activités p{
+   padding-left:50px ;
+}
+
+
+
+
+
+
+/*media query*/
+
+@media(max-width:1000px){
+   body{
+      display: grid;
+      width: 100%;
+      justify-content: center;
+      justify-items: center;
+   }
+   .container{
+      margin: 20px;
+      grid-template-columns: repeat(1, 1fr);
+   }
+   
+   .profil_text h2 span {
+    font-size: 0.9em;
+    font-weight: 300;
+   }
+
+
+   .contactInfo , .formation{
+    text-align: center;
+   }
+
+   .Langues , .soft{
+   display: flex;
+   align-items: center;
+   flex-wrap: nowrap;
+   flex-direction: column;
+   margin: auto;
+   height: auto;
+   }
+    .Langues div, .soft div{
+    font-size: 1.4em;
+    height: 70px;
+    width: auto;
+   }
+}
